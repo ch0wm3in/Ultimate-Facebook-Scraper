@@ -28,7 +28,7 @@
   "comment_text" : ".//span[contains(@class,'_3l3x')]",
   "more_comment_replies": ".//a[contains(@class,'_4sxc _42ft')]",
   "comment_see_more_link" : ".//a[contains(@class,'_5v47 fss')]",
-  "comment_reply" : "..//..//div[@aria-label='Comment reply']"
+  "comment_reply" : "..//..//div[@aria-label='Comment reply']",
   "comment_photo" : "//*/a[@rel='theater']/img"
 
 }
