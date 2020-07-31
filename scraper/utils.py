@@ -140,6 +140,14 @@ def get_post_photos_links(x, selectors, small_photo):
             links.append(get_photo_link(el, selectors, small_photo))
     return links
 
+def get_post_comment_photos_links(x, selectors, small_photo):
+    links = []
+    photos = safe_find_elements_by_xpath(x, selectors.get("comment_photo"))
+    if photos is not None:
+        for el in photos:
+            links.append(get_photo_link(el, selectors, small_photo))
+    return links
+
 
 def get_div_links(x, tag, selectors):
     try:
