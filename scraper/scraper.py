@@ -607,7 +607,7 @@ def get_comments():
         pass
     return comments
 
-
+#Todo insert selector as link to image_downloader func
 def get_group_post_as_line(post_id, photos_dir):
     try:
         data = driver.find_element_by_xpath(selectors.get("single_post"))
