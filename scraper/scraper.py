@@ -620,8 +620,11 @@ def get_group_post_as_line(post_id, photos_dir):
         post_type = ""
         status = '"' + utils.get_status(data, selectors).replace("\r\n", " ") + '"'
         photos = utils.get_post_photos_links(data, selectors, photos_small_size)
+        comment_photos_theater_links = utils.get_post_comment_photos_links(data, selectors, photos_small_size)
+        comment_photos_spotlight_links = get_facebook_images_url(comment_photos_theater_links)
         comments = get_comments()
         photos = image_downloader(photos, photos_dir)
+        comment_photos = image_downloader(comment_photos_spotlight_links)
         line = (
             str(time)
             + "||"
